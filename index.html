@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Easy Bus - School & University Transport</title>
+    
+    <!-- PWA Primary Meta Tags -->
+    <meta name="title" content="Easy Bus - School & University Transport" />
+    <meta name="description" content="Book reliable school buses and university transport with live driver status, multi-language support, and instant booking." />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Apple iOS Safari PWA Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Easy Bus" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Tajawal (for modern Arabic typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'Tajawal', 'system-ui', 'sans-serif'],
+              arabic: ['Tajawal', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#fff7ed',
+                100: '#ffedd5',
+                200: '#fed7aa',
+                300: '#fdba74',
+                400: '#fb923c',
+                500: '#f97316',
+                600: '#ea580c',
+                700: '#c2410c',
+                800: '#9a3412',
+                900: '#7c2d12',
+                950: '#431407',
+              },
+              dark: {
+                800: '#1E293B',
+                900: '#0F172A',
+                950: '#080D1A',
+              }
+            },
+            keyframes: {
+              'pulse-fast': {
+                '0%, 100%': { opacity: 1 },
+                '50%': { opacity: 0.4 },
+              },
+              'slide-up': {
+                '0%': { transform: 'translateY(100%)', opacity: 0 },
+                '100%': { transform: 'translateY(0)', opacity: 1 },
+              },
+              'fade-in': {
+                '0%': { opacity: 0, transform: 'scale(0.97)' },
+                '100%': { opacity: 1, transform: 'scale(1)' },
+              }
+            },
+            animation: {
+              'pulse-fast': 'pulse-fast 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'slide-up': 'slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+              'fade-in': 'fade-in 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --sat: env(safe-area-inset-top, 0px);
+        --sab: env(safe-area-inset-bottom, 0px);
+        --sal: env(safe-area-inset-left, 0px);
+        --sar: env(safe-area-inset-right, 0px);
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: transparent;
+        font-family: 'Plus Jakarta Sans', 'Tajawal', system-ui, sans-serif;
+        background-color: #0F172A;
+        color: #F8FAFC;
+        overscroll-behavior-y: none;
+      }
+      /* RTL Arabic typography enhancement */
+      html[dir="rtl"] body {
+        font-family: 'Tajawal', 'Plus Jakarta Sans', system-ui, sans-serif;
+      }
+      /* Custom mobile scrollbar */
+      ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 4px;
+      }
+      @keyframes splashProgress {
+        0% { width: 0%; }
+        40% { width: 55%; }
+        80% { width: 85%; }
+        100% { width: 100%; }
+      }
+      .safe-pb {
+        padding-bottom: max(16px, env(safe-area-inset-bottom));
+      }
+      .safe-pt {
+        padding-top: max(12px, env(safe-area-inset-top));
+      }
+    </style>
+  </head>
+  <body class="bg-dark-900 text-slate-100 min-h-screen select-none">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

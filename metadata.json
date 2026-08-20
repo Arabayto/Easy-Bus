@@ -1,0 +1,6 @@
+{
+  "name": "Easy Bus",
+  "description": "A web application for a private ride bus service. Users can log in to view a list of available vehicles with detailed information.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

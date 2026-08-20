@@ -1,0 +1,56 @@
+{
+  "id": "easy-bus-pwa",
+  "name": "Easy Bus - School & University Ride",
+  "short_name": "Easy Bus",
+  "description": "Book reliable school buses and university transport with live driver status.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#0B1120",
+  "theme_color": "#F97316",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["transportation", "education", "travel"],
+  "shortcuts": [
+    {
+      "name": "School Bus",
+      "short_name": "School",
+      "description": "Browse available school buses",
+      "url": "/#school_bus",
+      "icons": [{ "src": "/icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "University Car",
+      "short_name": "University",
+      "description": "Browse university ride cars",
+      "url": "/#university_car",
+      "icons": [{ "src": "/icon.svg", "sizes": "any" }]
+    }
+  ]
+}

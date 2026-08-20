@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="windowGrad512" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad512)"/>
+  <g>
+    <path d="M120 130 C120 100, 160 85, 256 85 C352 85, 392 100, 392 130 L392 370 C392 390, 380 400, 360 400 L152 400 C132 400, 120 390, 120 370 Z" fill="#FFFFFF"/>
+    <rect x="180" y="110" width="152" height="28" rx="8" fill="#1E293B"/>
+    <text x="256" y="129" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="2">EASY BUS</text>
+    <path d="M144 155 C144 150, 150 148, 160 148 L352 148 C362 148, 368 150, 368 155 L368 240 C368 248, 360 252, 350 252 L162 252 C152 252, 144 248, 144 240 Z" fill="url(#windowGrad512)"/>
+    <line x1="256" y1="148" x2="256" y2="252" stroke="#CBD5E1" stroke-width="4"/>
+    <rect x="196" y="275" width="120" height="35" rx="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="3"/>
+    <circle cx="160" cy="292" r="18" fill="#FEF08A" stroke="#F59E0B" stroke-width="4"/>
+    <circle cx="352" cy="292" r="18" fill="#FEF08A" stroke="#F59E0B" stroke-width="4"/>
+    <rect x="135" y="345" width="242" height="36" rx="10" fill="#334155"/>
+    <rect x="130" y="395" width="45" height="32" rx="10" fill="#0F172A"/>
+    <rect x="337" y="395" width="45" height="32" rx="10" fill="#0F172A"/>
+  </g>
+</svg>

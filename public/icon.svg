@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlowIcon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E1E28"/>
+      <stop offset="100%" stop-color="#07090D"/>
+    </radialGradient>
+    <linearGradient id="goldGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="40%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+    <linearGradient id="busGradIcon" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="30%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </linearGradient>
+    <linearGradient id="windowGradIcon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="shieldFillIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181D26"/>
+      <stop offset="50%" stop-color="#0F131A"/>
+      <stop offset="100%" stop-color="#07090D"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bgGlowIcon)"/>
+  
+  <g transform="translate(48, 24) scale(0.7)">
+    <path d="M 120 40 L 480 40 L 490 240 C 490 380, 340 480, 300 500 C 260 480, 110 380, 110 240 Z" 
+          fill="url(#shieldFillIcon)" 
+          stroke="url(#goldGradIcon)" 
+          stroke-width="16" 
+          stroke-linejoin="round"/>
+
+    <path d="M 130 180 L 190 180 L 175 195 L 130 195 Z" fill="#EAB308" opacity="0.85"/>
+    <path d="M 130 205 L 205 205 L 190 220 L 130 220 Z" fill="#EAB308" opacity="0.95"/>
+    <path d="M 130 230 L 195 230 L 180 245 L 130 245 Z" fill="#EAB308" opacity="0.85"/>
+
+    <path d="M 130 265 Q 300 270, 470 245 L 465 255 Q 300 280, 130 275 Z" fill="url(#goldGradIcon)"/>
+
+    <g transform="translate(150, 70)">
+      <path d="M 30 140 L 60 70 C 65 60, 80 50, 105 45 L 250 25 C 280 22, 310 35, 315 55 L 325 150 C 325 165, 315 175, 290 180 L 70 180 C 40 180, 30 165, 30 140 Z" fill="url(#busGradIcon)"/>
+      <path d="M 75 65 L 250 30 C 275 27, 295 38, 302 52 L 290 55 L 90 75 Z" fill="#A16207"/>
+      <path d="M 215 40 L 295 35 C 308 35, 315 42, 312 60 L 305 130 C 303 140, 295 145, 280 145 L 210 145 C 205 145, 202 140, 204 130 L 215 40 Z" fill="url(#windowGradIcon)" stroke="#FEF08A" stroke-width="2"/>
+      <path d="M 90 80 L 195 55 L 190 115 L 80 120 Z" fill="url(#windowGradIcon)"/>
+      <polygon points="280,140 298,138 295,147 278,146" fill="#FFFFFF"/>
+      <polygon points="230,145 245,144 242,150 228,149" fill="#FFFFFF"/>
+      <ellipse cx="230" cy="180" rx="14" ry="22" fill="#0F172A" stroke="#EAB308" stroke-width="4"/>
+      <ellipse cx="230" cy="180" rx="6" ry="10" fill="#EAB308"/>
+      <ellipse cx="90" cy="180" rx="12" ry="18" fill="#0F172A" stroke="#EAB308" stroke-width="3"/>
+      <ellipse cx="90" cy="180" rx="5" ry="8" fill="#EAB308"/>
+    </g>
+
+    <text x="180" y="340" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="62" font-weight="900" font-style="italic" fill="#FFFFFF" letter-spacing="-1">Easy</text>
+    <text x="320" y="340" font-family="'Plus Jakarta Sans', 'Segoe UI', sans-serif" font-size="62" font-weight="900" font-style="italic" fill="url(#goldGradIcon)" letter-spacing="-1">Bus</text>
+
+    <path d="M 115 370 Q 230 350, 450 420 Q 320 380, 150 400 Z" fill="url(#goldGradIcon)"/>
+
+    <polygon points="300,390 305,403 319,403 308,411 312,424 300,416 288,424 292,411 281,403 295,403" fill="url(#goldGradIcon)"/>
+    <polygon points="265,396 269,407 280,407 271,414 274,424 265,418 256,424 259,414 250,407 261,407" fill="url(#goldGradIcon)"/>
+    <polygon points="335,396 339,407 350,407 341,414 344,424 335,418 326,424 329,414 320,407 331,407" fill="url(#goldGradIcon)"/>
+  </g>
+</svg>
